@@ -1,0 +1,50 @@
+Pusula_İrem_Çetin Data Science Intern Case 
+
+irem çetin irem2cetin@gmail.com
+
+1. Exploratory Data Analysis (EDA)
+Purpose: To understand the dataset's structure, detect anomalies, and identify patterns.
+
+1.1Data Loading: The dataset was loaded from an Excel file into a Pandas DataFrame.
+
+2.1Initial Inspection: Initial data inspection was performed to view the first few rows, understand data types, and summarize statistics.
+
+3.1Missing Values Analysis: Checked for missing values in the dataset to assess data completeness. This involves calculating the count and percentage of missing data for each feature.
+
+4.1Correlation Analysis: Analyzed the correlation between 'Drug End Date' and 'Side Effect Notification Date' to understand their relationship. Visualized this with scatter plots and regression lines.
+
+5.1Visualization: Generated visualizations like scatter plots and heatmaps to uncover patterns and relationships within the data.
+
+2. Data Pre-Processing
+Purpose: To clean and prepare the data for modeling by handling missing values, encoding categorical variables, and normalizing numerical features.
+
+2.1Handling Missing Values:
+
+2.2Numerical Features: Missing values in numerical features ('Kilo', 'Boy') were imputed using the mean value.
+Categorical Features: Missing values in categorical features were imputed using the most frequent value.
+Feature Selection:
+
+2.3Target Variable: Identified 'Yan_Etki' (Side Effect) as the target variable for classification.
+Feature Set: Selected features excluding the target variable for model input.
+Pre-Processing Pipelines:
+
+2.4Numerical Pipeline: Created a pipeline to handle missing value imputation and standardization for numerical features.
+2.5Categorical Pipeline: Created a pipeline to handle missing value imputation and one-hot encoding for categorical features.
+2.6Column Transformer: Combined the numerical and categorical pipelines into a single pre-processing step using ColumnTransformer.
+
+3. Model Building and Evaluation
+Purpose: To build and evaluate a predictive model using the pre-processed data.
+
+3.1Model Pipeline:
+
+Integrated pre-processing and classification into a single pipeline using Pipeline from sklearn.
+Used RandomForestClassifier for the classification task.
+3.2Train-Test Split:
+
+Split the data into training and testing sets to evaluate model performance.
+3.3Model Training:
+
+Trained the model using the training set.
+3.4Model Evaluation:
+
+Evaluated model accuracy on the test set to assess its performance.
