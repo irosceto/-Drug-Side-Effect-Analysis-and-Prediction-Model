@@ -1,6 +1,5 @@
-# Pusula_Irem_Cetin
-Data Science Intern Case
-İREM ÇETİN irem2cetin@gmail.com Data Scince Intern Case Install Dependencies: Ensure you have the required Python libraries installed. You can use pip to install them:
+
+
 
 pip install pandas matplotlib seaborn scikit-learn openpyxl Prepare Your Data:
 
